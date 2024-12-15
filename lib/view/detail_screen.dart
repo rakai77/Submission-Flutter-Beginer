@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marvel_character/view/utils/favorite_button.dart';
 import '../data/dummy.dart';
 
 class DetailScreen extends StatelessWidget {
@@ -11,6 +12,9 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(character.name),
+        actions: const [
+          FavoriteButton(),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
